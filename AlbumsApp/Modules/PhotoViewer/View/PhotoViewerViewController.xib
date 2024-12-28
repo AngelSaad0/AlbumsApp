@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhotoViewerViewController" customModule="AlbumsApp" customModuleProvider="target">
+            <connections>
+                <outlet property="photoImageView" destination="8aq-Hm-QLM" id="DnC-Ms-zUg"/>
+                <outlet property="scrollView" destination="TRL-av-4pB" id="XGN-ai-ViP"/>
+                <outlet property="view" destination="jfq-mN-DCs" id="vbn-P4-zDu"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="jfq-mN-DCs">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="5" translatesAutoresizingMaskIntoConstraints="NO" id="TRL-av-4pB">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8aq-Hm-QLM">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="759"/>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="8aq-Hm-QLM" firstAttribute="height" secondItem="Qtb-F9-q8m" secondAttribute="height" id="EOH-hB-mEv"/>
+                        <constraint firstItem="8aq-Hm-QLM" firstAttribute="top" secondItem="buv-i5-Ty9" secondAttribute="top" id="JC2-hx-xCz"/>
+                        <constraint firstItem="8aq-Hm-QLM" firstAttribute="leading" secondItem="buv-i5-Ty9" secondAttribute="leading" id="WVq-fL-DLf"/>
+                        <constraint firstItem="8aq-Hm-QLM" firstAttribute="trailing" secondItem="buv-i5-Ty9" secondAttribute="trailing" id="eoi-4P-KOv"/>
+                        <constraint firstItem="8aq-Hm-QLM" firstAttribute="bottom" secondItem="buv-i5-Ty9" secondAttribute="bottom" id="pmp-wV-92o"/>
+                        <constraint firstItem="8aq-Hm-QLM" firstAttribute="width" secondItem="Qtb-F9-q8m" secondAttribute="width" id="sWD-lC-wP3"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="buv-i5-Ty9"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="Qtb-F9-q8m"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="AZW-WX-0vw"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="TRL-av-4pB" firstAttribute="top" secondItem="AZW-WX-0vw" secondAttribute="top" id="3fx-Kc-3oG"/>
+                <constraint firstItem="TRL-av-4pB" firstAttribute="leading" secondItem="AZW-WX-0vw" secondAttribute="leading" id="96X-wh-OKQ"/>
+                <constraint firstItem="TRL-av-4pB" firstAttribute="bottom" secondItem="AZW-WX-0vw" secondAttribute="bottom" id="Kzv-j9-hrs"/>
+                <constraint firstItem="TRL-av-4pB" firstAttribute="trailing" secondItem="AZW-WX-0vw" secondAttribute="trailing" id="uQp-1E-ACg"/>
+            </constraints>
+            <point key="canvasLocation" x="130.53435114503816" y="-12.67605633802817"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

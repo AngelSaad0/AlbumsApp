@@ -74,7 +74,12 @@ class AlbumDetailsViewController: UIViewController {
 }
 
 extension AlbumDetailsViewController: UICollectionViewDelegate {
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        view.endEditing(true)
+        let photoPath = viewModel.filteredPhotos[indexPath.row].url
+        let photoViewerVC = PhotoViewerViewController(photoPath: photoPath)
+        navigationController?.pushViewController(photoViewerVC, animated: true)
+    }
 }
 
 extension AlbumDetailsViewController: UICollectionViewDataSource {
