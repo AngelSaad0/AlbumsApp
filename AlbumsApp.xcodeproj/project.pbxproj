@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		C614034E2D2091A30033B5C3 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C614034D2D2091A30033B5C3 /* Kingfisher */; };
+		C61403662D2095440033B5C3 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = C61403652D2095440033B5C3 /* CombineMoya */; };
+		C61403682D2095440033B5C3 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = C61403672D2095440033B5C3 /* Moya */; };
+		C614036A2D2095440033B5C3 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = C61403692D2095440033B5C3 /* ReactiveMoya */; };
+		C614036C2D2095440033B5C3 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = C614036B2D2095440033B5C3 /* RxMoya */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,7 +44,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C614036C2D2095440033B5C3 /* RxMoya in Frameworks */,
+				C61403662D2095440033B5C3 /* CombineMoya in Frameworks */,
+				C614036A2D2095440033B5C3 /* ReactiveMoya in Frameworks */,
 				C614034E2D2091A30033B5C3 /* Kingfisher in Frameworks */,
+				C61403682D2095440033B5C3 /* Moya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				C61402F12D208F150033B5C3 /* AlbumsApp */,
+				C61403642D2095440033B5C3 /* Frameworks */,
 				C61402F02D208F150033B5C3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,6 +70,13 @@
 				C61402EF2D208F150033B5C3 /* AlbumsApp.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		C61403642D2095440033B5C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +100,10 @@
 			name = AlbumsApp;
 			packageProductDependencies = (
 				C614034D2D2091A30033B5C3 /* Kingfisher */,
+				C61403652D2095440033B5C3 /* CombineMoya */,
+				C61403672D2095440033B5C3 /* Moya */,
+				C61403692D2095440033B5C3 /* ReactiveMoya */,
+				C614036B2D2095440033B5C3 /* RxMoya */,
 			);
 			productName = AlbumsApp;
 			productReference = C61402EF2D208F150033B5C3 /* AlbumsApp.app */;
@@ -370,6 +390,26 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C614034C2D2091A30033B5C3 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		C61403652D2095440033B5C3 /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C614034F2D2092AE0033B5C3 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+		C61403672D2095440033B5C3 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C614034F2D2092AE0033B5C3 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		C61403692D2095440033B5C3 /* ReactiveMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C614034F2D2092AE0033B5C3 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = ReactiveMoya;
+		};
+		C614036B2D2095440033B5C3 /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C614034F2D2092AE0033B5C3 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
