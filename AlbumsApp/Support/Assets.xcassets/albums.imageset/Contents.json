@@ -1,0 +1,22 @@
+{
+  "images" : [
+    {
+      "filename" : "pngtree-simple-gallery-or-album-icon-with-photos-or-images-png-image_4959299.png",
+      "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "filename" : "imageedit_1_8115792640.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
