@@ -18,7 +18,7 @@ protocol NetworkManagerProtocol {
 
 class NetworkManager: NetworkManagerProtocol {
     static let shared = NetworkManager()
-    private let provider = MoyaProvider<GalleryService>()
+    private let provider = MoyaProvider<AlbumsService>()
     
     private init() {}
     
