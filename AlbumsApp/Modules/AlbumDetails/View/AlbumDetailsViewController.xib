@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AlbumDetailsViewController" customModule="AlbumsApp" customModuleProvider="target">
+            <connections>
+                <outlet property="photosCollectionView" destination="FDF-iE-9VY" id="NSa-Ub-P8C"/>
+                <outlet property="photosSearchBar" destination="mc5-Eg-U1W" id="DiR-gH-0Jo"/>
+                <outlet property="view" destination="FUF-xC-UbE" id="ULN-Uw-nVL"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="FUF-xC-UbE">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" placeholder="Search in images.." translatesAutoresizingMaskIntoConstraints="NO" id="mc5-Eg-U1W">
+                    <rect key="frame" x="0.0" y="59" width="393" height="56"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="FDF-iE-9VY">
+                    <rect key="frame" x="0.0" y="115" width="393" height="737"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="0wT-KI-Lqp">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="20"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="dKU-1M-9ct"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="FDF-iE-9VY" firstAttribute="leading" secondItem="dKU-1M-9ct" secondAttribute="leading" id="AQ9-Rb-edQ"/>
+                <constraint firstItem="mc5-Eg-U1W" firstAttribute="trailing" secondItem="dKU-1M-9ct" secondAttribute="trailing" id="I2l-Ja-C0V"/>
+                <constraint firstAttribute="bottom" secondItem="FDF-iE-9VY" secondAttribute="bottom" id="PHS-Y0-EOb"/>
+                <constraint firstItem="mc5-Eg-U1W" firstAttribute="leading" secondItem="dKU-1M-9ct" secondAttribute="leading" id="Y1Y-RN-8IW"/>
+                <constraint firstItem="dKU-1M-9ct" firstAttribute="trailing" secondItem="FDF-iE-9VY" secondAttribute="trailing" id="hPQ-QE-QcQ"/>
+                <constraint firstItem="mc5-Eg-U1W" firstAttribute="top" secondItem="dKU-1M-9ct" secondAttribute="top" id="upV-uH-1Jh"/>
+                <constraint firstItem="FDF-iE-9VY" firstAttribute="top" secondItem="mc5-Eg-U1W" secondAttribute="bottom" id="wkt-Ue-Tny"/>
+            </constraints>
+            <point key="canvasLocation" x="42" y="-12"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

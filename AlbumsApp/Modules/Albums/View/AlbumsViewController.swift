@@ -77,7 +77,9 @@ class AlbumsViewController: UIViewController {
 extension AlbumsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-#warning("push album details")
+        let album = viewModel.albums[indexPath.row]
+        let detailsVC = AlbumDetailsViewController(albumID: album.id, albumTitle: album.title)
+        navigationController?.pushViewController(detailsVC, animated: true)
     }
     
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {

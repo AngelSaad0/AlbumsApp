@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="xno-rs-VkI" customClass="PhotoCell" customModule="AlbumsApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jkU-3f-sxM">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="PRo-ue-40l"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="jkU-3f-sxM" secondAttribute="trailing" id="AO7-KE-k8g"/>
+                <constraint firstItem="jkU-3f-sxM" firstAttribute="leading" secondItem="xno-rs-VkI" secondAttribute="leading" id="RUi-K2-Hao"/>
+                <constraint firstAttribute="bottom" secondItem="jkU-3f-sxM" secondAttribute="bottom" id="n4X-dm-VX3"/>
+                <constraint firstItem="jkU-3f-sxM" firstAttribute="top" secondItem="xno-rs-VkI" secondAttribute="top" id="zND-Cc-iJY"/>
+            </constraints>
+            <connections>
+                <outlet property="photoImageView" destination="jkU-3f-sxM" id="v9y-K4-rwf"/>
+            </connections>
+            <point key="canvasLocation" x="-21.374045801526716" y="-12.67605633802817"/>
+        </collectionViewCell>
+    </objects>
+</document>
